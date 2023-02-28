@@ -1,4 +1,4 @@
-<template class="">
+<template>
   <div class="block">
     <NavBar />
   </div>
@@ -11,8 +11,14 @@
 
   </div>
   
+  <div>
+    <SignUpPage />
+  </div>
   
-  
+  <div>
+    <ChangeInformation />
+  </div>
+
   <div>
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
@@ -25,6 +31,8 @@ import HelloWorld from './components/HelloWorld.vue'
 import NavBar from './components/NavBar.vue';
 import HomePage from './components/HomePage.vue';
 import ItemCard from './components/ItemCard.vue';
+import SignUpPage from './components/SignUpPage.vue';
+import ChangeInformation from './components/ChangeInformation.vue';
 
 export default {
   name: 'App',
@@ -32,8 +40,10 @@ export default {
     HelloWorld,
     NavBar,
     HomePage,
-    ItemCard
-  },
+    ItemCard,
+    SignUpPage,
+    ChangeInformation
+},
 }
 
 
