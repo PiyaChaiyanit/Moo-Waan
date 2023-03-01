@@ -81,18 +81,37 @@
 
 
 
-
-
             <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable has-background-primary">
+                    <a class="navbar-link has-text-white">
+                        Admin
+                    </a>
+
+                    <div class="navbar-dropdown is-right">
+                        <a class="navbar-item">
+                            Admin Admin
+                        </a>
+                        
+                        <hr class="navbar-divider">
+                        
+                        <router-link to="/" class="navbar-item">
+                            Log out
+                        </router-link>
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <router-link to="/register" class="button is-rounded is-primary">
+                        <router-link to="" class="button is-rounded is-primary">
                             <strong>Admin</strong>
                         </router-link>
 
                     </div>
                 </div>
-            </div>
+                </div> -->
         </div>
     </nav>
 </template>

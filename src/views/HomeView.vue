@@ -13,13 +13,6 @@
     <ItemCard />
   </div>
 
-  <div class="block">
-    <ItemPage />
-  </div>
-
-  <div class="block">
-    <BasketPage />
-  </div>
 
   <div class="block">
     <FooterPage />
