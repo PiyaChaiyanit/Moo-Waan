@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class="block">
+        <div class="block is-size-3 has-text-centered ml-5">
             Basket
         </div>
         <div class="columns">
