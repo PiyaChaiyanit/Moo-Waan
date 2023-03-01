@@ -1,71 +1,37 @@
+
+import HomePage from './components/HomePage.vue';
+
 <template>
-  <div class="block">
-    <NavBar />
-  </div>
-  
-  <div class="block has-text-centered">
-    <HomePage />
-  </div>
-  <div class="block">
-    <ItemCard />
+  <!-- <nav>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+  </nav> -->
+  <HomePage />
 
-  </div>
-  
-  <div>
-    <SignUpPage />
-  </div>
-  
-  <div>
-    <ChangeInformation />
-  </div>
-  
-  <div>
-    <PaymentPage />
-  </div>
-
-  <div>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
-  
-  
+  <router-view/>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-import NavBar from './components/NavBar.vue';
-import HomePage from './components/HomePage.vue';
-import ItemCard from './components/ItemCard.vue';
-import SignUpPage from './components/SignUpPage.vue';
-import ChangeInformation from './components/ChangeInformation.vue';
-import PaymentPage from './components/PaymentPage.vue';
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld,
-    NavBar,
-    HomePage,
-    ItemCard,
-    SignUpPage,
-    ChangeInformation,
-    PaymentPage
-},
-}
-
-
-
-
-
-</script>
-
 <style>
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+  }
+
+  nav {
+    padding: 30px;
+  }
+
+  nav a {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+
+  nav a.router-link-exact-active {
+    color: #42b983;
+  }
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
 </style>

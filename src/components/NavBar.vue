@@ -18,9 +18,9 @@
       
       <div class="navbar-item">
         <div class="buttons">
-          <a class="button is-rounded is-primary">
+          <router-link to="/" class="button is-rounded is-primary">
             <strong>Home</strong>
-          </a>
+          </router-link>
           
         </div>
       </div>
@@ -52,12 +52,12 @@
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <a class="button is-rounded is-primary">
+          <router-link to="/register" class="button is-rounded is-primary">
             <strong>Sign up</strong>
-          </a>
-          <a class="button is-rounded is-primary">
+          </router-link>
+          <router-link to="/login" class="button is-rounded is-primary">
             Log in
-          </a>
+          </router-link>
         </div>
       </div>
     </div>

@@ -15,7 +15,7 @@
 </template>
 
 <script>
-export default {
+    export default {
     name: 'PaymentPage',
     props: {
         msg: String
