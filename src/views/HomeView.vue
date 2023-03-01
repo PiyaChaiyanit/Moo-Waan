@@ -12,10 +12,14 @@
   <div class="block">
     <ItemCard />
   </div>
+
+  <div class="block">
+    <ItemPage />
+  </div>
+
   <div class="block">
     <FooterPage />
   </div>
-
 </template>
 
 <script>
@@ -25,6 +29,7 @@ import NavBar from '@/components/NavBar.vue';
 import HomePage from '@/components/HomePage.vue';
 import ItemCard from '@/components/ItemCard.vue';
 import FooterPage from '@/components/FooterPage.vue';
+import ItemPage from '@/components/ItemPage.vue';
 
 
 export default {
@@ -34,7 +39,8 @@ export default {
     NavBar,
     HomePage,
     ItemCard,
-    FooterPage
+    FooterPage,
+    ItemPage
   }
 }
 </script>
