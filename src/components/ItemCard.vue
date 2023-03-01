@@ -14,7 +14,7 @@
                 <br>
                 <div class="has-text-right">
                     <router-link to="/SelectedItems" class="button is-rounded">
-                        Add to Cart
+                        Select
                     </router-link>
                 </div>
             </article>
@@ -32,7 +32,7 @@
                 <br>
                 <div class="has-text-right">
                     <router-link to="/SelectedItems" class="button is-rounded">
-                        Add to Cart
+                        Select
                     </router-link>
                 </div>
             </article>
@@ -51,7 +51,7 @@
                 <br>
                 <div class="has-text-right">
                     <router-link to="/SelectedItems" class="button is-rounded">
-                        Add to Cart
+                        Select
                     </router-link>
                 </div>
             </article>
@@ -69,7 +69,7 @@
                 <br>
                 <div class="has-text-right">
                     <router-link to="/SelectedItems" class="button is-rounded">
-                        Add to Cart
+                        Select
                     </router-link>
                 </div>
             </article>
