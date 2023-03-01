@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="block">
-            Item
+            Basket
         </div>
         <div class="columns">
             <figure class="image is-128x128">
@@ -10,7 +10,10 @@
             <div class="column">
                 ปากกา Pentel<br>
                 ปากหมึกซึมสีน้ำเงิน<br>
-                50 ฿<br>
+                50 ฿
+            </div>
+            <div class="column">
+                <br><br><br>
                 <div class="button m-1">
                     -
                 </div>
@@ -21,11 +24,13 @@
                     +
                 </div>
             </div>
-            <div class="column">
-                <br><br><br>
-                <div class="button m-1">
-                    ตระกร้า
-                </div>
+        </div>
+        <div class="block has-text-right">
+            <div class="button m-1 is-disabled">
+                ราคารวม: 50 ฿
+            </div>
+            <div class="button m-1">
+                ชำระเงิน
             </div>
         </div>
     </div>
@@ -33,7 +38,7 @@
 
 <script>
 export default {
-    name: 'ItemPage',
+    name: 'SignUpPage',
     props: {
         msg: String
     }

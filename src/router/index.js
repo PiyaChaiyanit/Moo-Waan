@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import About from '../views/AboutView.vue'
 import Login from '../views/LoginPage.vue'
 import Register from '../views/RegisterPage.vue'
+import SelectedItems from '../views/SelectedItems';
 
 const routes = [
   {
@@ -25,6 +26,11 @@ const routes = [
     path: '/register',
     name: 'register',
     component: Register
+  },
+  {
+    path: '/SelectedItems',
+    name: '/SelectedItems',
+    component: SelectedItems
   }
 ]
 
