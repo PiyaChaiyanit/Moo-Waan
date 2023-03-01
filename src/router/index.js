@@ -8,6 +8,12 @@ import Admin from '../views/AdminPage.vue'
 import SelectedItems from '../views/SelectedItems.vue'
 import BasketPage from '../views/BasketPage.vue'
 import PaymentPage from '../views/PaymentView.vue'
+import DecoPage from '../views/DecoPage.vue'
+import PaperPage from '../views/PaperPage.vue'
+import ToolPage from '../views/ToolPage.vue'
+import WritingPage from '../views/WritingPage.vue'
+
+
 
 
 const routes = [
@@ -56,6 +62,26 @@ const routes = [
     path: '/Payment',
     name: 'Payment',
     component: PaymentPage
+  },
+  {
+    path: '/deco',
+    name: 'Decorate',
+    component: DecoPage
+  },
+  {
+    path: '/paper',
+    name: 'Paper',
+    component: PaperPage
+  },
+  {
+    path: '/tool',
+    name: 'Tool',
+    component: ToolPage
+  },
+  {
+    path: '/write',
+    name: 'Writing',
+    component: WritingPage
   }
   
 

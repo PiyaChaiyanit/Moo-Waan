@@ -26,25 +26,25 @@
       </div>
       
 
-      <div class="navbar-item has-dropdown is-hoverable">
+      <div class="navbar-item has-dropdown is-hoverable has-shadow">
         <a class="navbar-link">
           Shop
         </a>
 
         <div class="navbar-dropdown">
-          <a class="navbar-item">
+          <router-link to="/write" class="navbar-item">
             เครื่องเขียน
-          </a>
-          <a class="navbar-item">
+          </router-link>
+          <router-link to="/paper" class="navbar-item">
             กระดาษ
-          </a>
-          <a class="navbar-item">
+          </router-link>
+          <router-link to="/tool" class="navbar-item">
             อุปกรณ์
-          </a>
+          </router-link>
           
-          <a class="navbar-item">
+          <router-link to="/deco" class="navbar-item">
             ของตกแต่ง
-          </a>
+          </router-link>
         </div>
       </div>
       <div class="navbar-item">
