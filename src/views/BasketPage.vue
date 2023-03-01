@@ -4,7 +4,7 @@
     </div>
   
     <div class="block">
-      <ItemPage />
+      <BasketPage />
     </div>
   
     <div class="block">
@@ -17,7 +17,7 @@
   // import HelloWorld from '@/components/HelloWorld.vue'
   import NavBar from '@/components/NavBar.vue';
   import FooterPage from '@/components/FooterPage.vue';
-  import ItemPage from '@/components/ItemPage.vue';
+  import BasketPage from '@/components/BasketPage.vue';
   
   
   export default {
@@ -26,7 +26,7 @@
       // HelloWorld,
       NavBar,
       FooterPage,
-      ItemPage
+      BasketPage
   }
   }
   </script>

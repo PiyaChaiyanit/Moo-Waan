@@ -4,7 +4,7 @@
     </div>
   
     <div class="block">
-      <ItemPage />
+      <PaymentPage />
     </div>
   
     <div class="block">
@@ -17,16 +17,16 @@
   // import HelloWorld from '@/components/HelloWorld.vue'
   import NavBar from '@/components/NavBar.vue';
   import FooterPage from '@/components/FooterPage.vue';
-  import ItemPage from '@/components/ItemPage.vue';
+  import PaymentPage from '@/components/PaymentPage.vue';
   
   
   export default {
-    name: 'SelectedItems',
+    name: 'PaymentView',
     components: {
       // HelloWorld,
       NavBar,
       FooterPage,
-      ItemPage
+      PaymentPage
   }
   }
   </script>

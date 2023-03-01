@@ -1,53 +1,80 @@
 <template>
     <div class="block">
-        <div class="columns">
-            <div class="card column is-one-third">
-                <div class="card-image is-96x96">
-                    <figure class="image">
-                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                    </figure>
+        <div class="tile is-ancestor">
+        <div class="tile is-parent">
+            <article class="tile is-child box">
+                <figure class="image is-4by3">
+                    <img src="https://bulma.io/images/placeholders/640x480.png">
+                </figure>
+                <br>
+                <p class="is-size-5">gay</p>
+                <br>
+                <p class="has-text-left">ปากกาสีน้ำเงิน</p>
+                <p class="has-text-left">ราคา : 50 ฿</p>
+                <br>
+                <div class="has-text-right">
+                    <router-link to="/SelectedItems" class="button is-rounded">
+                        Add to Cart
+                    </router-link>
                 </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="content">
-                            Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum.
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            
-            <div class="card column is-one-third">
-                <div class="card-image is-96x96">
-                    <figure class="image">
-                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                    </figure>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="content">
-                            Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-           
-            <div class="card column is-one-third">
-                <div class="card-image is-96x96">
-                    <figure class="image">
-                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                    </figure>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="content">
-                            Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum.
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </article>
         </div>
+        <div class="tile is-parent">
+            <article class="tile is-child box">
+                <figure class="image is-4by3">
+                    <img src="https://bulma.io/images/placeholders/640x480.png">
+                </figure>
+                <br>
+                <p class="is-size-5">gay</p>
+                <br>
+                <p class="has-text-left">ปากกาสีน้ำเงิน</p>
+                <p class="has-text-left">ราคา : 50 ฿</p>
+                <br>
+                <div class="has-text-right">
+                    <router-link to="/SelectedItems" class="button is-rounded">
+                        Add to Cart
+                    </router-link>
+                </div>
+            </article>
+        </div>
+        <div class="tile is-parent">
+            <article class="tile is-child box">
+                
+                <figure class="image is-4by3">
+                    <img src="https://bulma.io/images/placeholders/640x480.png">
+                </figure>
+                <br>
+                <p class="is-size-5">gay</p>
+                <br>
+                <p class="has-text-left">ปากกาสีน้ำเงิน</p>
+                <p class="has-text-left">ราคา : 50 ฿</p>
+                <br>
+                <div class="has-text-right">
+                    <router-link to="/SelectedItems" class="button is-rounded">
+                        Add to Cart
+                    </router-link>
+                </div>
+            </article>
+        </div>
+        <div class="tile is-parent">
+            <article class="tile is-child box">
+                <figure class="image is-4by3">
+                    <img src="https://bulma.io/images/placeholders/640x480.png">
+                </figure>
+                <br>
+                <p class="is-size-5">gay</p>
+                <br>
+                <p class="has-text-left">ปากกาสีน้ำเงิน</p>
+                <p class="has-text-left">ราคา : 50 ฿</p>
+                <br>
+                <div class="has-text-right">
+                    <router-link to="/SelectedItems" class="button is-rounded">
+                        Add to Cart
+                    </router-link>
+                </div>
+            </article>
+        </div>
+    </div>
     </div>
    
 </template>

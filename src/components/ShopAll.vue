@@ -6,23 +6,150 @@
     <div class="tile is-ancestor">
         <div class="tile is-parent">
             <article class="tile is-child box">
-                <p class="title">Hello World</p>
-                <p class="subtitle">What is up?</p>
+                <figure class="image is-4by3">
+                    <img src="https://bulma.io/images/placeholders/640x480.png">
+                </figure>
+                <br>
+                <p class="is-size-5">gay</p>
+                <br>
+                <p class="has-text-left">ปากกาสีน้ำเงิน</p>
+                <p class="has-text-left">ราคา : 50 ฿</p>
+                <br>
+                <div class="has-text-right">
+                    <router-link to="/SelectedItems" class="button is-rounded">
+                        Select
+                    </router-link>
+                </div>
             </article>
         </div>
         <div class="tile is-parent">
             <article class="tile is-child box">
-                <p class="title">Foo</p>
-                <p class="subtitle">Bar</p>
+                <figure class="image is-4by3">
+                    <img src="https://bulma.io/images/placeholders/640x480.png">
+                </figure>
+                <br>
+                <p class="is-size-5">gay</p>
+                <br>
+                <p class="has-text-left">ปากกาสีน้ำเงิน</p>
+                <p class="has-text-left">ราคา : 50 ฿</p>
+                <br>
+                <div class="has-text-right">
+                    <router-link to="/SelectedItems" class="button is-rounded">
+                        Select
+                    </router-link>
+                </div>
             </article>
         </div>
         <div class="tile is-parent">
             <article class="tile is-child box">
-                <p class="title">Third column</p>
-                <p class="subtitle">With some content</p>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque
-                        tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                
+                <figure class="image is-4by3">
+                    <img src="https://bulma.io/images/placeholders/640x480.png">
+                </figure>
+                <br>
+                <p class="is-size-5">gay</p>
+                <br>
+                <p class="has-text-left">ปากกาสีน้ำเงิน</p>
+                <p class="has-text-left">ราคา : 50 ฿</p>
+                <br>
+                <div class="has-text-right">
+                    <router-link to="/SelectedItems" class="button is-rounded">
+                        Select
+                    </router-link>
+                </div>
+            </article>
+        </div>
+        <div class="tile is-parent">
+            <article class="tile is-child box">
+                <figure class="image is-4by3">
+                    <img src="https://bulma.io/images/placeholders/640x480.png">
+                </figure>
+                <br>
+                <p class="is-size-5">gay</p>
+                <br>
+                <p class="has-text-left">ปากกาสีน้ำเงิน</p>
+                <p class="has-text-left">ราคา : 50 ฿</p>
+                <br>
+                <div class="has-text-right">
+                    <router-link to="/SelectedItems" class="button is-rounded">
+                        Select
+                    </router-link>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div class="tile is-ancestor">
+        <div class="tile is-parent">
+            <article class="tile is-child box">
+                <figure class="image is-4by3">
+                    <img src="https://bulma.io/images/placeholders/640x480.png">
+                </figure>
+                <br>
+                <p class="is-size-5">gay</p>
+                <br>
+                <p class="has-text-left">ปากกาสีน้ำเงิน</p>
+                <p class="has-text-left">ราคา : 50 ฿</p>
+                <br>
+                <div class="has-text-right">
+                    <router-link to="/SelectedItems" class="button is-rounded">
+                        Select
+                    </router-link>
+                </div>
+            </article>
+        </div>
+        <div class="tile is-parent">
+            <article class="tile is-child box">
+                <figure class="image is-4by3">
+                    <img src="https://bulma.io/images/placeholders/640x480.png">
+                </figure>
+                <br>
+                <p class="is-size-5">gay</p>
+                <br>
+                <p class="has-text-left">ปากกาสีน้ำเงิน</p>
+                <p class="has-text-left">ราคา : 50 ฿</p>
+                <br>
+                <div class="has-text-right">
+                    <router-link to="/SelectedItems" class="button is-rounded">
+                        Select
+                    </router-link>
+                </div>
+            </article>
+        </div>
+        <div class="tile is-parent">
+            <article class="tile is-child box">
+                
+                <figure class="image is-4by3">
+                    <img src="https://bulma.io/images/placeholders/640x480.png">
+                </figure>
+                <br>
+                <p class="is-size-5">gay</p>
+                <br>
+                <p class="has-text-left">ปากกาสีน้ำเงิน</p>
+                <p class="has-text-left">ราคา : 50 ฿</p>
+                <br>
+                <div class="has-text-right">
+                    <router-link to="/SelectedItems" class="button is-rounded">
+                        Select
+                    </router-link>
+                </div>
+            </article>
+        </div>
+        <div class="tile is-parent">
+            <article class="tile is-child box">
+                <figure class="image is-4by3">
+                    <img src="https://bulma.io/images/placeholders/640x480.png">
+                </figure>
+                <br>
+                <p class="is-size-5">gay</p>
+                <br>
+                <p class="has-text-left">ปากกาสีน้ำเงิน</p>
+                <p class="has-text-left">ราคา : 50 ฿</p>
+                <br>
+                <div class="has-text-right">
+                    <router-link to="/SelectedItems" class="button is-rounded">
+                        Select
+                    </router-link>
                 </div>
             </article>
         </div>

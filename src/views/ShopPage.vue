@@ -9,9 +9,7 @@
       <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     </div>
   
-    <div class="block">
-      <ItemCard />
-    </div>
+    
     <div class="block">
       <FooterPage />
     </div>
@@ -23,7 +21,7 @@
   // import HelloWorld from '@/components/HelloWorld.vue'
   import NavBar from '@/components/NavBar.vue';
   import ShopAll from '@/components/ShopAll.vue';
-  import ItemCard from '@/components/ItemCard.vue';
+
   import FooterPage from '@/components/FooterPage.vue';
   
   
@@ -33,7 +31,6 @@
       // HelloWorld,
       NavBar,
       ShopAll,
-      ItemCard,
       FooterPage
     }
   }

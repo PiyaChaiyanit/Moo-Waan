@@ -29,16 +29,16 @@
             <div class="button m-1 is-disabled">
                 ราคารวม: 50 ฿
             </div>
-            <div class="button m-1">
+            <router-link to="/Payment" class="button m-1">
                 ชำระเงิน
-            </div>
+            </router-link>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'SignUpPage',
+    name: 'BasketPage',
     props: {
         msg: String
     }

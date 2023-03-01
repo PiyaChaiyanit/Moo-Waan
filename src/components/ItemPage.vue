@@ -23,9 +23,9 @@
             </div>
             <div class="column">
                 <br><br><br>
-                <div class="button m-1">
-                    ตระกร้า
-                </div>
+                <router-link to="/BasketPage" class="button m-1">
+                    เพิ่มลงตะกร้าสินค้า
+                </router-link>
             </div>
         </div>
     </div>

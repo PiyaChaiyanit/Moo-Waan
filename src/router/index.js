@@ -5,6 +5,9 @@ import Login from '../views/LoginPage.vue'
 import Register from '../views/RegisterPage.vue'
 import AllShop from '../views/ShopPage.vue'
 import Admin from '../views/AdminPage.vue'
+import SelectedItems from '../views/SelectedItems.vue'
+import BasketPage from '../views/BasketPage.vue'
+import PaymentPage from '../views/PaymentView.vue'
 
 
 const routes = [
@@ -38,6 +41,21 @@ const routes = [
     path: '/admin',
     name: 'admin',
     component: Admin
+  },
+  {
+    path: '/SelectedItems',
+    name: 'SelectedItems',
+    component: SelectedItems
+  },
+  {
+    path: '/BasketPage',
+    name: 'BasketPage',
+    component: BasketPage
+  },
+  {
+    path: '/Payment',
+    name: 'Payment',
+    component: PaymentPage
   }
   
 
