@@ -4,7 +4,7 @@ import About from '../views/AboutView.vue'
 import Login from '../views/LoginPage.vue'
 import Register from '../views/RegisterPage.vue'
 import AllShop from '../views/ShopPage.vue'
-
+import Admin from '../views/AdminPage.vue'
 
 
 const routes = [
@@ -33,7 +33,15 @@ const routes = [
     path: '/Shop',
     name: 'Shop',
     component: AllShop
+  },
+  {
+    path: '/admin',
+    name: 'admin',
+    component: Admin
   }
+  
+
+
 ]
 
 const router = createRouter({

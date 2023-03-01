@@ -14,9 +14,9 @@
 
 
   <div class="block has-text-centered">
-  <button class="button is-rounded">
+  <router-link to="/admin" class="button is-rounded">
         Login
-    </button>
+  </router-link>
   </div>
     
 
