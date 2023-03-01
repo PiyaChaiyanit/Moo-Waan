@@ -1,4 +1,9 @@
 <template>
+
+    <div class="block is-size-3 has-text-left ml-5">
+        Hot
+    </div>
+
     <div class="block">
         <div class="tile is-ancestor">
         <div class="tile is-parent">

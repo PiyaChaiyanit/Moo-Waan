@@ -9,9 +9,7 @@
       </router-link>
   </div>
 
-  <div class="block is-size-3 has-text-left ml-5">
-    Hot
-  </div>
+  
 </template>
 
 <script>
