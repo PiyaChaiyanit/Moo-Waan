@@ -9,7 +9,7 @@
       <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     </div>
   
-    
+    <div class="block"></div>
     <div class="block">
       <FooterPage />
     </div>
