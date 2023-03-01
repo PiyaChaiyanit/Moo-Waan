@@ -17,7 +17,9 @@
     <EditUserPage />
   </div>
 
-
+  <div class="block">
+    <EditItemPage />
+  </div>
   <div class="block">
     <FooterPage />
   </div>
@@ -31,6 +33,7 @@ import HomePage from '@/components/HomePage.vue';
 import ItemCard from '@/components/ItemCard.vue';
 import FooterPage from '@/components/FooterPage.vue';
 import EditUserPage from '@/components/EditUserPage.vue';
+import EditItemPage from '@/components/EditItemPage.vue';
 
 
 
@@ -42,8 +45,9 @@ export default {
     HomePage,
     ItemCard,
     FooterPage,
-    EditUserPage
-  }
+    EditUserPage,
+    EditItemPage
+}
 }
 </script>
   

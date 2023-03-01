@@ -1,13 +1,19 @@
 <template>
     <div class="container">
-        <div class="notification is-warning">
+        <div class="box has-background-warning">
             <p>Card Number</p>
             <input class="input" type="cardnumber">
             <p>Name Holder</p>
             <input class="input" type="nameholder">
-            <p>Expire Date</p>
-            <input class="input" type="mountexpire">
-            <input class="input" type="year">
+            <div class="comlumns">
+                <p>Expire Date</p>
+                <div class="column">
+                    <input class="input" type="mountexpire"><br><br>
+                </div>
+                <div class="column">
+                    <input class="input" type="year">
+                </div>
+            </div>
             <p>CVC</p>
             <input class="input" type="cvc">
         </div>
@@ -15,7 +21,7 @@
 </template>
 
 <script>
-    export default {
+export default {
     name: 'PaymentPage',
     props: {
         msg: String
