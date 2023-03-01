@@ -47,6 +47,22 @@
           </a>
         </div>
       </div>
+      <div class="navbar-item">
+        <div class="buttons">
+          <router-link to="/BasketPage" class="button is-rounded is-primary">
+            <strong>Basket</strong>
+          </router-link>
+          
+        </div>
+      </div>
+      <div class="navbar-item">
+        <div class="buttons">
+          <router-link to="/" class="button is-rounded is-primary">
+            <strong>History</strong>
+          </router-link>
+          
+        </div>
+      </div>
     </div>
 
     <div class="navbar-end">

@@ -25,9 +25,9 @@
     </div>
 
   <div class="block has-text-centered">
-  <button class="button is-rounded">
+    <router-link to="/" class="button is-rounded">
         Sign Up
-    </button>
+    </router-link>
   </div>
   </template>
   
