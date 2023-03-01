@@ -18,6 +18,10 @@
   <div>
     <ChangeInformation />
   </div>
+  
+  <div>
+    <PaymentPage />
+  </div>
 
   <div>
     <HelloWorld msg="Welcome to Your Vue.js App"/>
@@ -33,6 +37,7 @@ import HomePage from './components/HomePage.vue';
 import ItemCard from './components/ItemCard.vue';
 import SignUpPage from './components/SignUpPage.vue';
 import ChangeInformation from './components/ChangeInformation.vue';
+import PaymentPage from './components/PaymentPage.vue';
 
 export default {
   name: 'App',
@@ -42,7 +47,8 @@ export default {
     HomePage,
     ItemCard,
     SignUpPage,
-    ChangeInformation
+    ChangeInformation,
+    PaymentPage
 },
 }
 

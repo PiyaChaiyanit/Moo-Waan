@@ -17,7 +17,7 @@
       <input class="input" type="password">
     </p>
     <p> Email
-      <input class="input" type="email">
+      <input class="input is-rounded" type="email">
     </p>
   </div>
 
