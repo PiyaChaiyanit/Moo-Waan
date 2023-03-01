@@ -18,7 +18,7 @@
 
                 <div class="navbar-item">
                     <div class="buttons">
-                        <router-link to="/" class="button is-rounded is-primary">
+                        <router-link to="/admin" class="button is-rounded is-primary">
                             <strong>Home</strong>
                         </router-link>
 
@@ -52,7 +52,7 @@
                 </div>
                 <div class="navbar-item">
                     <div class="buttons">
-                        <router-link to="/" class="button is-rounded is-primary">
+                        <router-link to="/edituser" class="button is-rounded is-primary">
                             <strong>Edit User</strong>
                         </router-link>
 
@@ -70,7 +70,7 @@
 
                 <div class="navbar-item">
                     <div class="buttons">
-                        <router-link to="/" class="button is-rounded is-primary">
+                        <router-link to="/edititem" class="button is-rounded is-primary">
                             <strong>Edit Item</strong>
                         </router-link>
 

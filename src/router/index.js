@@ -12,7 +12,8 @@ import DecoPage from '../views/DecoPage.vue'
 import PaperPage from '../views/PaperPage.vue'
 import ToolPage from '../views/ToolPage.vue'
 import WritingPage from '../views/WritingPage.vue'
-
+import EditItem from '../views/EditItem.vue'
+import EditUser from '../views/EditUser.vue'
 
 
 
@@ -82,8 +83,19 @@ const routes = [
     path: '/write',
     name: 'Writing',
     component: WritingPage
+  },
+  {
+    path: '/edititem',
+    name: 'EditItem',
+    component: EditItem
+  },
+  {
+    path: '/edituser',
+    name: 'EditUser',
+    component: EditUser
   }
   
+
 
 
 ]
