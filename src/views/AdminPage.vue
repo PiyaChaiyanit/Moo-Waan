@@ -13,13 +13,7 @@
     <ItemCard />
   </div>
 
-  <div class="block">
-    <EditUserPage />
-  </div>
-
-  <div class="block">
-    <EditItemPage />
-  </div>
+  
   <div class="block">
     <FooterPage />
   </div>
@@ -32,8 +26,7 @@ import AdminNav from '@/components/AdminNav.vue';
 import HomePage from '@/components/HomePage.vue';
 import ItemCard from '@/components/ItemCard.vue';
 import FooterPage from '@/components/FooterPage.vue';
-import EditUserPage from '@/components/EditUserPage.vue';
-import EditItemPage from '@/components/EditItemPage.vue';
+
 
 
 
@@ -45,8 +38,7 @@ export default {
     HomePage,
     ItemCard,
     FooterPage,
-    EditUserPage,
-    EditItemPage
+
 }
 }
 </script>
