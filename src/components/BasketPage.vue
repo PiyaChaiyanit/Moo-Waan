@@ -18,13 +18,11 @@
                     <a class="button m-1" @click="counter--">-</a>
                     <div class="button m-1">{{ counter }}</div>
                     <a class="button m-1" @click="counter++">+</a>
+                    <a class="button m-1" @click="cart.splice(cart, 1)">+</a>
                 </div>
             </div>
         </div>
         <div class="block has-text-right">
-            <div class="button m-1" @click="cart.splice(index, 1)">
-                Delete
-            </div>
             <div class="button m-1 is-disabled">
                 {{ item_id }}
                 ราคารวม: 50 ฿
