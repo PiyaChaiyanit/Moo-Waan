@@ -22,10 +22,11 @@
             </div>
         </div>
         <div class="block has-text-right">
-            <div class="button m-1" @click="cart = []">
+            <div class="button m-1" @click="cart.splice(index, 1)">
                 Delete
             </div>
             <div class="button m-1 is-disabled">
+                {{ item_id }}
                 ราคารวม: 50 ฿
             </div>
             <router-link to="/Payment" class="button m-1">
@@ -51,8 +52,7 @@ export default {
     created() {
         this.cart = JSON.parse(localStorage.getItem('cart'))
         console.log(this.cart)
-    }
-
+    },
 }
 </script>
 
