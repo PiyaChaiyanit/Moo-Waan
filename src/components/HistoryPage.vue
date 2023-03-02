@@ -42,10 +42,10 @@
                 </div>
                 <div class="column">
                     <div class="column">
-                        <div class="button">
+                        <div class="button is-rounded m-1">
                             ❌
                         </div>
-                        <div class="button">
+                        <div class="button is-rounded m-1">
                             ✔️
                         </div>
                     </div>
