@@ -1,11 +1,13 @@
 <template>
   <div class="block is-size-1">
-    Welocome <br> to <br> Moo-Waan Stationery
+    <p>
+      WELCOME <br> TO <br> Moo-Waan Stationery
+    </p>
   </div>
 
   <div class="block">
       <router-link to="/Shop" class="button is-rounded is-primary">
-        Shop
+        SHOP
       </router-link>
   </div>
 
