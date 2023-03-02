@@ -14,14 +14,14 @@
         <div class="column is-half">
           <p class="has-text-left is-size-5">Last Name</p>
           <input class="input is-rounded is-warning" name="lname" type="text" v-model="lname">
-          <p class="has-text-left is-size-5">Password</p>
-          <input class="input is-rounded is-warning" name="password" type="text" v-model="password">
+          <p class="has-text-left is-size-5">Password </p>
+          <input class="input is-rounded is-warning" name="password" type="password" v-model="password">
         </div>
       </div>
       <p class="is-size-5 has-text-left">Email</p>
       <input class="input is-rounded is-warning" name="email" type="text" v-model="email"><br><br>
       <div class="control">
-        <button class="button is-rounded is-warning">
+        <button class="button is-rounded is-warning" @click="checkReg()">
           Sign Up
         </button>
       </div>
@@ -37,10 +37,25 @@ export default {
     msg: String
   },
   data() {
-   
+    return {
+      fname: '',
+      lname: '',
+      phone: '',
+      email: '',
+      password: ''
+    }
   },
-  
-
+  methods: {
+    checkReg() {
+      if (this.fname === "" || this.lname === "" || this.phone === "" || this.email === "" || this.password === "") {
+        alert("Please input every box")
+      }
+      else {
+        alert("Success")
+        this.$router.push("/")
+      }
+    }
+  }
 }
 </script>
   
