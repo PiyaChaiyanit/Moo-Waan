@@ -8,7 +8,7 @@
                 <img src="https://bulma.io/images/placeholders/128x128.png">
             </figure>
             <div class="column">
-                ปากกา Pentel<br>
+                {{ item.name }}<br>
                 ปากหมึกซึมสีน้ำเงิน<br>
                 50 ฿<br>
                 <a class="button m-1" @click="counter--">-</a>
@@ -26,6 +26,8 @@
 </template>
 
 <script>
+import itemData from "../item.json"
+
 
 export default {
     name: 'ItemPage',
@@ -35,14 +37,23 @@ export default {
     data() {
         return {
             counter: 1,
-            cart: []
+            cart: [],
+            itemData: itemData
         }
     },
     methods: {
         addToCart() {
 
         }
-    }
+    },
+    computed:{
+        item_id(){
+        return parseInt(this.$route.params.id)
+      },
+      item(){
+        return this.itemData.find(course => course.item_id === this.item_id)
+      }
+    },
 }
 </script>
 

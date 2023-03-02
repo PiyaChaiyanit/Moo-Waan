@@ -50,7 +50,7 @@ const routes = [
     component: Admin
   },
   {
-    path: '/SelectedItems',
+    path: '/SelectedItems/:id',
     name: 'SelectedItems',
     component: SelectedItems
   },

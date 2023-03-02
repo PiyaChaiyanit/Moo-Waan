@@ -22,13 +22,14 @@
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-content">
-                                    <p class="title is-4">{{ todo.name }}</p>
+                                    <p class="title is-4">{{ todo.item_id }}</p>
                                     <p class="has-text-left">ชนิด : {{ todo.type }}</p>
                                     <p class="has-text-left">ราคา : {{ todo.price }} ฿</p>
                                 </div>
                             </div>
                             <div class="has-text-right">
-                                <router-link to="/SelectedItems" class="button is-rounded">
+                                <router-link class="button is-rounded"
+                                :to="{ name:'SelectedItems', params: {id: todo.item_id}}">
                                     Select
                                 </router-link>
                             </div>
