@@ -22,7 +22,8 @@
                             </div>
                         </div>
                         <div class="has-text-right">
-                            <router-link to="/SelectedItems" class="button is-rounded">
+                            <router-link class="button is-rounded"
+                            :to="{ name:'SelectedItems', params: {id: todo.item_id}}">
                                 Select
                             </router-link>
                         </div>

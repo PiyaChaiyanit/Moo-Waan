@@ -9,15 +9,15 @@
             </figure>
             <div class="column">
                 {{ item.name }}<br>
-                ปากหมึกซึมสีน้ำเงิน<br>
-                50 ฿<br>
+                {{ item.type }}<br>
+                {{ item.price }} ฿<br>
                 <a class="button m-1" @click="counter--">-</a>
                 <div class="button m-1">{{ counter }}</div>
                 <a class="button m-1" @click="counter++">+</a>
             </div>
             <div class="column">
                 <br><br><br>
-                <router-link to="/BasketPage" class="button m-1">
+                <router-link to="/BasketPage" class="button m-1" @click="addToCart">
                     เพิ่มลงตะกร้าสินค้า
                 </router-link>
             </div>
@@ -43,7 +43,10 @@ export default {
     },
     methods: {
         addToCart() {
-
+            this.cart.push({
+                ...this.item, amount: this.counter
+            })
+            localStorage.setItem('cart',JSON.stringify(this.cart))
         }
     },
     computed:{
@@ -54,6 +57,13 @@ export default {
         return this.itemData.find(course => course.item_id === this.item_id)
       }
     },
+    created(){
+        const beforeCart = localStorage.getItem('cart')
+        if(beforeCart){
+            this.cart = JSON.parse(beforeCart)
+        }
+        console.log(this.cart)
+    }
 }
 </script>
 
