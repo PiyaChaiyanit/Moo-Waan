@@ -20,7 +20,8 @@
                     <a class="button m-1" @click="counter++">+</a>
                 </div>
             </div>
-            <div class="block has-text-right">
+        </div>
+        <div class="block has-text-right">
                 <div class="button m-1 is-disabled">
                     ราคารวม: 50 ฿
                 </div>
@@ -28,9 +29,6 @@
                     ชำระเงิน
                 </router-link>
             </div>
-        </div>
-
-
     </div>
 </template>
 
