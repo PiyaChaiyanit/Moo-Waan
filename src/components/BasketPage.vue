@@ -15,7 +15,7 @@
             <div class="column">
                 <br><br><br>
                 <a class="button m-1" @click="counter--">-</a>
-                <div class="button m-1">{{ counter }}</div>
+                <div class="button m-1" v-model="counter">{{ counter }}</div>
                 <a class="button m-1" @click="counter++">+</a>
             </div>
         </div>
