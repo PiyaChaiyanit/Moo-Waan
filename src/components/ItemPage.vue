@@ -12,7 +12,7 @@
                 ปากหมึกซึมสีน้ำเงิน<br>
                 50 ฿<br>
                 <a class=button @click="counter++">-</a>
-                <a class="textarea">{{counter}}</a>
+                {{ counter }}
                 <a class=button @click="counter++">+</a>
             </div>
             <div class="column">
@@ -26,14 +26,12 @@
 </template>
 
 <script>
+
 export default {
     name: 'ItemPage',
     props: {
         msg: String
-    },
-    // data: {
-    //     counter: 0
-    // }
+    }
 }
 </script>
 
