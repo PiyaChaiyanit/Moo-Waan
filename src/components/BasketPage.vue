@@ -3,7 +3,7 @@
         <div class="block is-size-3 has-text-centered ml-5">
             Basket
         </div>
-        <div v-for="item in cart" :key="item.item_id">
+        <div class="block" v-for="item in cart" :key="item.item_id" >
             <div class="columns">
                 <figure class="image is-128x128">
                     <img src="https://bulma.io/images/placeholders/128x128.png">
