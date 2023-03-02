@@ -47,7 +47,16 @@ export default {
     },
     data() {
         return {
-            item
+            item,
+            cart: [],
+        }
+    },
+    methods: {
+        toSelect() {
+            let obj = this.cart
+            const myJSON = JSON.stringify(obj);
+            localStorage.setItem("cart", myJSON);
+            location.href = "./checkout.html";
         }
     }
 }
