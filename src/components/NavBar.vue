@@ -27,9 +27,9 @@
       
 
       <div class="navbar-item has-dropdown is-hoverable has-shadow">
-        <a class="navbar-link">
+        <router-link to="/Shop" class="navbar-link">
           Shop
-        </a>
+        </router-link>
 
         <div class="navbar-dropdown">
           <router-link to="/write" class="navbar-item">
