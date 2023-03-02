@@ -7,19 +7,19 @@
       <div class="columns">
         <div class="column is-half">
           <p class="has-text-left is-size-5">First Name</p>
-          <input class="input is-rounded is-info is-warning" type="fname">
+          <input class="input is-rounded is-info is-warning" name="fname" type="text" v-model="fname">
           <p class="has-text-left is-size-5">Phone</p>
-          <input class="input is-rounded is-warning" type="phonenumber">
+          <input class="input is-rounded is-warning" name="phonenumber" type="number" v-model="phone">
         </div>
         <div class="column is-half">
           <p class="has-text-left is-size-5">Last Name</p>
-          <input class="input is-rounded is-warning" type="lname">
+          <input class="input is-rounded is-warning" name="lname" type="text" v-model="lname">
           <p class="has-text-left is-size-5">Password</p>
-          <input class="input is-rounded is-warning" type="password">
+          <input class="input is-rounded is-warning" name="password" type="text" v-model="password">
         </div>
       </div>
       <p class="is-size-5 has-text-left">Email</p>
-      <input class="input is-rounded is-warning" type="email"><br><br>
+      <input class="input is-rounded is-warning" name="email" type="text" v-model="email"><br><br>
       <div class="control">
         <button class="button is-rounded is-warning">
           Sign Up
@@ -27,36 +27,7 @@
       </div>
     </div>
   </div>
-  <!-- <div class="block is-size-1 has-text-centered">
-      Register
-    </div>
   
-    <div class="block">
-        <p>First name</p> <br>
-        <input class="input is-rounded" type="text" placeholder="Name"> <br>
-    </div>
-    <div class="block">
-        <p>Last name</p> <br>
-        <input class="input is-rounded" type="text" placeholder="LastName"> <br>
-    </div>
-    <div class="block">
-        <p>Phone</p> <br>
-        <input class="input is-rounded" type="text" placeholder="Phone"> <br>
-    </div>
-    <div class="block">
-        <p>Password</p> <br>
-        <input class="input is-rounded" type="text" placeholder="Password"> <br>
-    </div>
-    <div class="block">
-        <p>Email</p> <br>
-        <input class="input is-rounded" type="text" placeholder="Email"> <br>
-    </div>
-
-  <div class="block has-text-centered">
-    <router-link to="/" class="button is-rounded">
-        Sign Up
-    </button>
-  </div> -->
 </template>
   
 <script>
@@ -64,7 +35,12 @@ export default {
   name: 'SignUpPage',
   props: {
     msg: String
-  }
+  },
+  data() {
+   
+  },
+  
+
 }
 </script>
   

@@ -12,8 +12,8 @@
 
             <!-- Card element start here------------------------------------------>
             
-                <div class="column is-one-quarter" v-for="(todo, index) in item" :key="index">
-                    <div class="card" v-if="todo.type === 'decorate'">
+                <div class="column is-one-quarter" v-for="(todo, index) in filerByType" :key="index">
+                    <div class="card">
                         <div class="card-image">
                             <figure class="image is-1by1">
                                 <img src="https://bulma.io/images/placeholders/640x480.png" alt="Placeholder image">
@@ -55,6 +55,7 @@ import FooterPage from '@/components/FooterPage.vue';
 
 export default {
     name: 'DecoPage',
+    
     props: {
         msg: String
     },
@@ -65,6 +66,11 @@ export default {
     data() {
         return {
             item
+        }
+    },
+    computed: {
+        filerByType() {
+            return this.item.filter(item => item.type === "decorate")
         }
     }
 }
