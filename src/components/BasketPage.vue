@@ -18,7 +18,7 @@
                     <a class="button m-1" @click="counter--">-</a>
                     <div class="button m-1">{{ counter }}</div>
                     <a class="button m-1" @click="counter++">+</a>
-                    <a class="button m-1" @click="cart.splice(cart, 1)">+</a>
+                    <a class="button m-1" @click="cart.splice(cart, 1)">Delete</a>
                 </div>
             </div>
         </div>
