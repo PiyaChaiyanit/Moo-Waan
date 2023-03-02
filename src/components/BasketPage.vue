@@ -22,13 +22,16 @@
             </div>
         </div>
         <div class="block has-text-right">
-                <div class="button m-1 is-disabled">
-                    ราคารวม: 50 ฿
-                </div>
-                <router-link to="/Payment" class="button m-1">
-                    ชำระเงิน
-                </router-link>
+            <div class="button m-1" @click="cart = []">
+                Delete
             </div>
+            <div class="button m-1 is-disabled">
+                ราคารวม: 50 ฿
+            </div>
+            <router-link to="/Payment" class="button m-1">
+                ชำระเงิน
+            </router-link>
+        </div>
     </div>
 </template>
 
@@ -41,15 +44,15 @@ export default {
     data() {
         return {
             counter: 1,
-            cart:[]
+            cart: []
 
         }
     },
-    created(){
+    created() {
         this.cart = JSON.parse(localStorage.getItem('cart'))
         console.log(this.cart)
     }
-    
+
 }
 </script>
 
