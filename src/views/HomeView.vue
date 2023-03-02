@@ -13,9 +13,7 @@
     <ItemCard />
   </div>
 
-  <div class="block">
-    <HistoryPage />
-  </div>
+
 
   <div class="block">
     <FooterPage />
@@ -29,7 +27,7 @@ import NavBar from '@/components/NavBar.vue';
 import HomePage from '@/components/HomePage.vue';
 import ItemCard from '@/components/ItemCard.vue';
 import FooterPage from '@/components/FooterPage.vue';
-import HistoryPage from '@/components/HistoryPage.vue';
+
 
 
 
@@ -41,7 +39,7 @@ export default {
     HomePage,
     ItemCard,
     FooterPage,
-    HistoryPage
+ 
     
 }
 }

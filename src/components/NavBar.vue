@@ -57,7 +57,7 @@
       </div>
       <div class="navbar-item">
         <div class="buttons">
-          <router-link to="/" class="button is-rounded is-primary">
+          <router-link to="/history" class="button is-rounded is-primary">
             <strong>History</strong>
           </router-link>
           

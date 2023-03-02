@@ -14,7 +14,7 @@ import ToolPage from '../views/ToolPage.vue'
 import WritingPage from '../views/WritingPage.vue'
 import EditItem from '../views/EditItem.vue'
 import EditUser from '../views/EditUser.vue'
-
+import HistoryPage from '../views/HistoryView.vue'
 
 
 const routes = [
@@ -93,6 +93,11 @@ const routes = [
     path: '/edituser',
     name: 'EditUser',
     component: EditUser
+  },
+  {
+    path: '/history',
+    name: 'history',
+    component: HistoryPage
   }
   
 
