@@ -1,25 +1,14 @@
 <template>
-  <div class="block is-size-1 has-text-centered">
-    Login
+  <div class="container">
+    <div class="box">
+      <p class="is-size-2">Login</p><br>
+      <p class="is-size-5">Email</p>
+      <input class="input is-rounded has-text-centered" type="emaillogin"><br><br>
+      <p class="is-size-5">Password</p>
+      <input class="input is-rounded has-text-centered" type="passwordlogin"><br><br>
+      <button class="button is-rounded">Sign In</button>
+    </div>
   </div>
-
-  <div class="block">
-    <p>Email</p> <br>
-    <input class="input is-rounded" type="text" placeholder="Email"> <br>
-  </div>
-  <div class="block">
-    <p>Password</p> <br>
-    <input class="input is-rounded" type="text" placeholder="Password"> <br>
-  </div>
-
-
-  <div class="block has-text-centered">
-  <router-link to="/admin" class="button is-rounded">
-        Login
-  </router-link>
-  </div>
-    
-
 </template>
 
 
@@ -36,5 +25,5 @@ export default {
 
 
 <style>
-    @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 </style>
