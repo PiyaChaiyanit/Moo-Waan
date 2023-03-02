@@ -14,15 +14,9 @@
             </div>
             <div class="column">
                 <br><br><br>
-                <div class="button m-1">
-                    -
-                </div>
-                <div class="button m-1">
-                    1
-                </div>
-                <div class="button m-1">
-                    +
-                </div>
+                <a class="button m-1" @click="counter--">-</a>
+                <div class="button m-1">{{ counter }}</div>
+                <a class="button m-1" @click="counter++">+</a>
             </div>
         </div>
         <div class="block has-text-right">
@@ -41,7 +35,12 @@ export default {
     name: 'BasketPage',
     props: {
         msg: String
-    }
+    },
+    data() {
+        return {
+            counter: 0
+        }
+    }   
 }
 </script>
 
