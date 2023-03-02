@@ -5,42 +5,69 @@
   
     <div class="block">
         <p>First name</p> <br>
-        <input class="input is-rounded" type="text" placeholder="Name"> <br>
+        <input class="input is-rounded" type="text" v-model="fname" placeholder="fname"> <br>
     </div>
     <div class="block">
         <p>Last name</p> <br>
-        <input class="input is-rounded" type="text" placeholder="LastName"> <br>
+        <input class="input is-rounded" type="text" v-model="lname" placeholder="lname"> <br>
     </div>
     <div class="block">
         <p>Phone</p> <br>
-        <input class="input is-rounded" type="text" placeholder="Phone"> <br>
+        <input class="input is-rounded" type="number" v-model="phone" placeholder="phone"> <br>
     </div>
     <div class="block">
         <p>Email</p> <br>
-        <input class="input is-rounded" type="text" placeholder="Email"> <br>
+        <input class="input is-rounded" type="email" v-model="email" placeholder="email"> <br>
     </div>
     <div class="block">
         <p>Password</p> <br>
-        <input class="input is-rounded" type="text" placeholder="Password"> <br>
+        <input class="input is-rounded" type="password" v-model="password" placeholder="password"> <br>
     </div>
     <div class="block">
         <p>Confirm Password</p> <br>
-        <input class="input is-rounded" type="text" placeholder="Password"> <br>
+        <input class="input is-rounded" type="password" v-model="confirm" placeholder="confirm"> <br>
     </div>
 
     <div class="block has-text-centered">
-        <button class="button is-rounded">
+        <router-link to="" class="button is-rounded" @click="checkChange">
             Save
-        </button>
+        </router-link>
     </div>
   </template>
   
   <script>
+
+
   export default {
     name: 'ChangeInformation',
     props: {
       msg: String
+    },
+    data() {
+        return {
+            fname: '',
+            lname: '',
+            phone: '',
+            email: '',
+            password: '',
+            confirm: ''
+        }
+    },
+    methods: {
+        checkChange() {
+            if (this.fname === "" || this.lname === "" || this.phone === "" || this.email === "" || this.password === "" || this.confirm === "") {
+                alert("Please input every box")
+            }
+            else if(this.password != this.confirm) {
+                alert("Password Incorrect")
+            }
+            else {
+                alert("Success")
+                this.$router.push("/user")
+            }
+        }
     }
+
   }
   </script>
   

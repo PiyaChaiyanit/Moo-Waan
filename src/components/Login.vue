@@ -33,6 +33,9 @@ export default {
       if (this.email === "admin@moowaan.com" && this.password === "admin123") {
         this.$router.push('/admin')
       }
+      else if (this.email === "test@moowaan.com" && this.password === "1234") {
+        this.$router.push('/user')
+      }
       else if(this.email === "" || this.password === "") {
         alert('please input every box')
       }

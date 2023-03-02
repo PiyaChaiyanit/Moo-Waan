@@ -15,6 +15,8 @@ import WritingPage from '../views/WritingPage.vue'
 import EditItem from '../views/EditItem.vue'
 import EditUser from '../views/EditUser.vue'
 import HistoryPage from '../views/HistoryView.vue'
+import UserView from '../views/UserView.vue'
+import EditProfile from '../views/EditProfile.vue'
 
 
 const routes = [
@@ -98,6 +100,16 @@ const routes = [
     path: '/history',
     name: 'history',
     component: HistoryPage
+  },
+  {
+    path: '/user',
+    name: 'user',
+    component: UserView
+  },
+  {
+    path: '/editprofile',
+    name: 'editprofile',
+    component: EditProfile
   }
   
 
