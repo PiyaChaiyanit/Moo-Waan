@@ -11,7 +11,7 @@
                 <div class="column">
                     {{ item.name }}<br>
                     ราคา : {{ item.price }} ฿<br>
-                    คงเหลือ : {{ item.left }}
+                    คงเหลือ : {{ item.left - counter }}
                     
                 </div>
                 <div class="column">
@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="block has-text-right">
-            <div class="button m-1 is-disabled" @click="cart=[]">
+            <div class="button m-1 is-disabled" @click="clearItem">
                 
                 Clear
             </div>
@@ -52,11 +52,27 @@ export default {
 
         }
     },
+    methods:{
+        delItem() {
+            localStorage.removeItem()
+        },
+        clearItem() {
+            localStorage.removeItem('cart')
+            this.cart = []
+        }
+    },
     created() {
         this.cart = JSON.parse(localStorage.getItem('cart'))
         console.log(this.cart)
         // console.log(this.cart.item.amount)
     },
+    watch:{
+        cart(){
+            localStorage.setItem('cart',JSON.stringify(this.cart))
+
+            console.log('aas')
+        }
+    }
 }
 </script>
 

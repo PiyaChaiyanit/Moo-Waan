@@ -8,20 +8,20 @@
         <div class="column is-half">
           <p class="has-text-left is-size-5">First Name</p>
           <input class="input is-rounded is-info is-warning" name="fname" type="text" v-model="fname">
-          <p class="has-text-left is-size-5">Phone</p>
-          <input class="input is-rounded is-warning" name="phonenumber" type="number" v-model="phone">
+          <p class="has-text-left is-size-5">Password</p>
+          <input class="input is-rounded is-warning" name="password" type="password" v-model="password">
         </div>
         <div class="column is-half">
           <p class="has-text-left is-size-5">Last Name</p>
           <input class="input is-rounded is-warning" name="lname" type="text" v-model="lname">
-          <p class="has-text-left is-size-5">Password </p>
-          <input class="input is-rounded is-warning" name="password" type="password" v-model="password">
+          <p class="has-text-left is-size-5">Confirm Password </p>
+          <input class="input is-rounded is-warning" name="password" type="password" v-model="confirm_password">
         </div>
       </div>
       <p class="is-size-5 has-text-left">Email</p>
       <input class="input is-rounded is-warning" name="email" type="text" v-model="email"><br><br>
       <div class="control">
-        <button class="button is-rounded is-warning" @click="checkReg()">
+        <button class="button is-rounded is-warning" @click="register">
           Sign Up
         </button>
       </div>
@@ -42,18 +42,43 @@ export default {
       lname: '',
       phone: '',
       email: '',
-      password: ''
+      password: '',
+      confirm_password: '',
+      accounts: [],
     }
   },
   methods: {
-    checkReg() {
-      if (this.fname === "" || this.lname === "" || this.phone === "" || this.email === "" || this.password === "") {
-        alert("Please input every box")
-      }
-      else {
-        alert("Success")
-        this.$router.push("/")
-      }
+    register(){
+      const existingAccount = this.accounts.find(account => {
+          return account.email === this.email;
+        })
+        if(existingAccount){
+          alert('email already exist')
+        } else if (this.password !== this.confirm_password){
+          alert('password not match')
+        } else {
+          const newAcount = {
+            id: this.accounts.length + 1,
+            fname: this.fname,
+            lname: this.lname,
+            phone: this.phone,
+            email: this.email,
+            password: this.password,
+            
+          }
+          alert("Success")
+          console.log(newAcount)
+          this.accounts.push(newAcount)
+          localStorage.setItem('accounts', JSON.stringify(this.accounts))
+          this.$router.push('/')
+
+       }
+    }
+  },
+  created(){
+    const getAccounts = localStorage.getItem('accounts')
+    if(getAccounts){
+      this.accounts = JSON.parse(getAccounts)
     }
   }
 }

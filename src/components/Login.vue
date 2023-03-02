@@ -6,7 +6,7 @@
       <input class="input is-rounded has-text-centered" type="email" v-model="email"><br><br>
       <p class="is-size-5">Password</p>
       <input class="input is-rounded has-text-centered" type="password" v-model="password"><br><br>
-      <button class="button is-rounded" @click="checklogin()">
+      <button class="button is-rounded" @click="login">
         Sign In
       </button>
     </div>
@@ -25,25 +25,36 @@ export default {
   data() {
     return {
       email: '',
-      password: ''
+      password: '',
+      login_status: null,
+      account: []
     }
   },
   methods: {
-    checklogin() {
-      if (this.email === "admin@moowaan.com" && this.password === "admin123") {
-        this.$router.push('/admin')
+      login(){
+        const existingAccount = this.accounts.find(account => {
+          return account.email === this.email;
+        });
+        if(existingAccount){
+          if(existingAccount.password === this.password){
+            this.login_status = true
+            localStorage.setItem('login_status', this.login_status)
+            localStorage.setItem('signedInAccount', JSON.stringify(existingAccount))
+            this.$router.push('/user')
+          } else {
+            alert('password wrong')
+          }
+        } else {
+          alert('email not found')
+        }
       }
-      else if (this.email === "test@moowaan.com" && this.password === "1234") {
-        this.$router.push('/user')
-      }
-      else if(this.email === "" || this.password === "") {
-        alert('please input every box')
-      }
-      else {
-        alert('Incorrect email or password')
+    },
+    created() {
+      const accountData = localStorage.getItem('accounts');
+      if (accountData) {
+        this.accounts = JSON.parse(accountData);
       }
     }
-  }
 }
 
 
