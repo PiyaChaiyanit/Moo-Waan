@@ -1,6 +1,6 @@
 <template>
   <div class="block is-size-1">
-    Welocome to <br> Moo-Waan Stationery
+    Welocome <br> to <br> Moo-Waan Stationery
   </div>
 
   <div class="block">

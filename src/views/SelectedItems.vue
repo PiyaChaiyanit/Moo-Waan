@@ -27,7 +27,7 @@ export default {
     NavBar,
     FooterPage,
     ItemPage
-  },
+  }
 }
 </script>
   
