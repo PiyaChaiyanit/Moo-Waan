@@ -11,15 +11,9 @@
                 ปากกา Pentel<br>
                 ปากหมึกซึมสีน้ำเงิน<br>
                 50 ฿<br>
-                <div class="button m-1">
-                    -
-                </div>
-                <div class="button m-1">
-                    1
-                </div>
-                <div class="button m-1">
-                    +
-                </div>
+                <a class=button @click="counter++">-</a>
+                <a class="textarea">{{counter}}</a>
+                <a class=button @click="counter++">+</a>
             </div>
             <div class="column">
                 <br><br><br>
@@ -36,7 +30,10 @@ export default {
     name: 'ItemPage',
     props: {
         msg: String
-    }
+    },
+    // data: {
+    //     counter: 0
+    // }
 }
 </script>
 
