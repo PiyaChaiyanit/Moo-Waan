@@ -11,7 +11,7 @@
                 <div class="column">
                     {{ item.name }}<br>
                     {{ item.type }}<br>
-                    50 ฿
+                    {{ item.price }} ฿
                 </div>
                 <div class="column">
                     <br><br><br>
@@ -51,6 +51,11 @@ export default {
     created() {
         this.cart = JSON.parse(localStorage.getItem('cart'))
         console.log(this.cart)
+    },
+    methods: {
+        clearBasket() {
+            
+        }
     }
 
 }

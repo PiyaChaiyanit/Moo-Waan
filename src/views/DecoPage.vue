@@ -70,9 +70,9 @@ export default {
             cart:[]
         }
     },
-    methods:{
-        addcart(){
-
+    computed: {
+        filerByType() {
+            return this.item.filter(item => item.type === "decorate")
         }
     }
 }
