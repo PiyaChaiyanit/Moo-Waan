@@ -4,55 +4,64 @@
         "name" : "ปากกา Pentel",
         "price" : 50,
         "type" : "write",
-        "image" : "./assets/logo.png"
+        "image" : "./assets/logo.png",
+        "hot" : true
+    
     },
     {
         "item_id" : 2,
         "name" : "ดินสอกด Pentel",
         "price" : 50,
         "type" : "write",
-        "image" : "./assets/logo.png"
+        "image" : "./assets/logo.png",
+        "hot" : false
     },
     {
         "item_id" : 3,
         "name" : "กระดาษ A4 AA",
         "price" : 125,
         "type" : "paper",
-        "image" : "./assets/logo.png"
+        "image" : "./assets/logo.png",
+        "hot" : false
     },
     {
         "item_id" : 4,
         "name" : "กระดาษ A5 AA",
         "price" : 259,
         "type" : "paper",
-        "image" : "./assets/logo.png"
+        "image" : "./assets/logo.png",
+        "hot" : true
     },
     {
         "item_id" : 5,
         "name" : "ฟิวเจอบอร์ด ขาว",
         "price" : 130,
         "type" : "decorate",
-        "image" : "./assets/logo.png"
+        "image" : "./assets/logo.png",
+        "hot" : false
     },
     {
         "item_id" : 6,
         "name" : "ฟิวเจอบอร์ด ดำ",
         "price" : 50,
         "type" : "decorate",
-        "image" : "./assets/logo.png"
+        "image" : "./assets/logo.png",
+        "hot" : true
     },
     {
         "item_id" : 7,
         "name" : "ไม้บรรทัด",
         "price" : 15,
         "type" : "tool",
-        "image" : "./assets/logo.png"
+        "image" : "./assets/logo.png",
+        "hot" : true
     },
     {
         "item_id" : 8,
         "name" : "วงเวียน",
         "price" : 25,
         "type" : "tool",
-        "image" : "./assets/logo.png"
+        "image" : "./assets/logo.png",
+        "hot" : false
     }
 ]
