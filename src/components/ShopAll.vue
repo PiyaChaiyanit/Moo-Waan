@@ -19,6 +19,7 @@
                                 <p class="title is-4">{{ todo.name }}</p>
                                 <p class="has-text-left">ชนิด : {{ todo.type }}</p>
                                 <p class="has-text-left">ราคา : {{ todo.price }} ฿</p>
+                                <p class="has-text-left">จำนวนที่เหลือ : {{ todo.amount }} </p>
                             </div>
                         </div>
                         <div class="has-text-right">

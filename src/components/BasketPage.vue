@@ -3,28 +3,33 @@
         <div class="block is-size-3 has-text-centered ml-5">
             Basket
         </div>
-        <div class="block" v-for="item in cart" :key="item.item_id" >
+        <div class="block" v-for="item, index in cart" :key="item.item_id" >
             <div class="columns">
                 <figure class="image is-128x128">
                     <img src="https://bulma.io/images/placeholders/128x128.png">
                 </figure>
                 <div class="column">
                     {{ item.name }}<br>
-                    {{ item.type }}<br>
-                    50 ฿
+                    ราคา : {{ item.price }} ฿<br>
+                    คงเหลือ : {{ item.left }}
+                    
                 </div>
                 <div class="column">
                     <br><br><br>
                     <a class="button m-1" @click="counter--">-</a>
                     <div class="button m-1">{{ counter }}</div>
                     <a class="button m-1" @click="counter++">+</a>
-                    <a class="button m-1" @click="cart.splice(cart, 1)">Delete</a>
+                    <a class="button m-1" @click="cart.splice(index, 1)">Delete</a>
                 </div>
             </div>
         </div>
         <div class="block has-text-right">
+            <div class="button m-1 is-disabled" @click="cart=[]">
+                
+                Clear
+            </div>
             <div class="button m-1 is-disabled">
-                {{ item_id }}
+                
                 ราคารวม: 50 ฿
             </div>
             <router-link to="/Payment" class="button m-1">
@@ -50,6 +55,7 @@ export default {
     created() {
         this.cart = JSON.parse(localStorage.getItem('cart'))
         console.log(this.cart)
+        // console.log(this.cart.item.amount)
     },
 }
 </script>

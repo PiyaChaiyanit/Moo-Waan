@@ -9,8 +9,8 @@
             </figure>
             <div class="column">
                 {{ item.name }}<br>
-                {{ item.type }}<br>
-                {{ item.price }} ฿<br>
+                จำนวน : {{ item.left }}<br>
+                ราคา : {{ item.price }} ฿<br>
                 <a class="button m-1" @click="counter--">-</a>
                 <div class="button m-1">{{ counter }}</div>
                 <a class="button m-1" @click="counter++">+</a>

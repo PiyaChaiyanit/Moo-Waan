@@ -5,6 +5,7 @@
         "price" : 50,
         "type" : "write",
         "image" : "./assets/logo.png",
+        "left" : 50,
         "hot" : true
     
     },
@@ -14,6 +15,7 @@
         "price" : 50,
         "type" : "write",
         "image" : "./assets/logo.png",
+        "left" : 50,
         "hot" : false
     },
     {
@@ -22,6 +24,7 @@
         "price" : 125,
         "type" : "paper",
         "image" : "./assets/logo.png",
+        "left" : 50,
         "hot" : false
     },
     {
@@ -30,6 +33,7 @@
         "price" : 259,
         "type" : "paper",
         "image" : "./assets/logo.png",
+        "left" : 50,
         "hot" : true
     },
     {
@@ -38,6 +42,7 @@
         "price" : 130,
         "type" : "decorate",
         "image" : "./assets/logo.png",
+        "left" : 50,
         "hot" : false
     },
     {
@@ -46,6 +51,7 @@
         "price" : 50,
         "type" : "decorate",
         "image" : "./assets/logo.png",
+        "left" : 50,
         "hot" : true
     },
     {
@@ -54,6 +60,7 @@
         "price" : 15,
         "type" : "tool",
         "image" : "./assets/logo.png",
+        "left" : 50,
         "hot" : true
     },
     {
@@ -62,6 +69,7 @@
         "price" : 25,
         "type" : "tool",
         "image" : "./assets/logo.png",
+        "left" : 50,
         "hot" : false
     }
 ]
