@@ -34,7 +34,6 @@ export default {
     },
     data() {
         return {
-            number_atlest: 0,
             counter: 0
         }
     }
