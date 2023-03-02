@@ -6,7 +6,9 @@
       <input class="input is-rounded has-text-centered" type="emaillogin"><br><br>
       <p class="is-size-5">Password</p>
       <input class="input is-rounded has-text-centered" type="passwordlogin"><br><br>
-      <button class="button is-rounded">Sign In</button>
+      <router-link to="/admin" class="button is-rounded">
+        Sign In
+      </router-link>
     </div>
   </div>
 </template>
