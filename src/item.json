@@ -4,7 +4,7 @@
         "name" : "ปากกา Pentel",
         "price" : 50,
         "type" : "write",
-        "image" : "./assets/logo.png",
+        "image" : "./assets/pentelpen",
         "left" : 50,
         "hot" : true
     
