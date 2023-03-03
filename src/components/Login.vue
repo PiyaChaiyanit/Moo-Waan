@@ -27,7 +27,7 @@ export default {
       email: '',
       password: '',
       login_status: null,
-      account: []
+      accounts: []
     }
   },
   methods: {
