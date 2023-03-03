@@ -6,7 +6,7 @@
         <div class="block" v-for="item, index in cart" :key="item.item_id" >
             <div class="columns">
                 <figure class="image is-128x128">
-                    <img src="https://bulma.io/images/placeholders/128x128.png">
+                    <img :src='item.image'>
                 </figure>
                 <div class="column">
                     {{ item.name }}<br>
@@ -40,6 +40,7 @@
 </template>
 
 <script>
+
 
 export default {
     name: 'BasketPage',

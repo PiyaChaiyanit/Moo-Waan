@@ -16,7 +16,7 @@
                     <div class="card">
                         <div class="card-image">
                             <figure class="image is-1by1">
-                                <img src="https://bulma.io/images/placeholders/640x480.png" alt="Placeholder image">
+                                <img :src="todo.image" alt="Placeholder image">
                             </figure>
                         </div>
                         <div class="card-content">

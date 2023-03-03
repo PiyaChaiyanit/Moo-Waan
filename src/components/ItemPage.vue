@@ -5,7 +5,7 @@
         </div>
         <div class="columns">
             <figure class="image is-128x128">
-                <img src="">
+                <img :src="item.image">
             </figure>
             <div class="column">
                 {{ item.name }}<br>
@@ -54,7 +54,7 @@ export default {
         return parseInt(this.$route.params.id)
       },
       item(){
-        return this.itemData.find(course => course.item_id === this.item_id)
+        return this.itemData.find(item => item.item_id === this.item_id)
       }
     },
     created(){

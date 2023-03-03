@@ -8,7 +8,7 @@
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-1by1">
-                            <img src="">
+                            <img :src="todo.image">
                         </figure>
                     </div>
                     <div class="card-content">

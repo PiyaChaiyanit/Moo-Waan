@@ -4,7 +4,7 @@
         "name" : "ปากกา Pentel",
         "price" : 50,
         "type" : "write",
-        "image" : "./assets/logo.png",
+        "image" : "https://cdn.discordapp.com/attachments/595608417234845715/1081087757125963786/pentelpen.png",
         "left" : 50,
         "hot" : true
     
@@ -14,7 +14,7 @@
         "name" : "ดินสอกด Pentel",
         "price" : 50,
         "type" : "write",
-        "image" : "./assets/logo.png",
+        "image" : "https://cdn.discordapp.com/attachments/595608417234845715/1081094800205418566/4038160.png",
         "left" : 50,
         "hot" : false
     },
@@ -23,7 +23,7 @@
         "name" : "กระดาษ A4 AA",
         "price" : 125,
         "type" : "paper",
-        "image" : "./assets/logo.png",
+        "image" : "https://cdn.discordapp.com/attachments/595608417234845715/1081095262019272734/a4paper.jpeg",
         "left" : 50,
         "hot" : false
     },
@@ -32,7 +32,7 @@
         "name" : "กระดาษ A5 AA",
         "price" : 259,
         "type" : "paper",
-        "image" : "./assets/logo.png",
+        "image" : "https://cdn.discordapp.com/attachments/595608417234845715/1081095265521512458/a5paper.jpeg",
         "left" : 50,
         "hot" : true
     },
@@ -41,7 +41,7 @@
         "name" : "ฟิวเจอบอร์ด ขาว",
         "price" : 130,
         "type" : "decorate",
-        "image" : "./assets/logo.png",
+        "image" : "https://cdn.discordapp.com/attachments/595608417234845715/1081095973469704222/0037142.png",
         "left" : 50,
         "hot" : false
     },
@@ -50,7 +50,7 @@
         "name" : "ฟิวเจอบอร์ด ดำ",
         "price" : 50,
         "type" : "decorate",
-        "image" : "./assets/logo.png",
+        "image" : "https://cdn.discordapp.com/attachments/595608417234845715/1081095894419640371/0037163_E0B8B4E0B98CE0B98C-65x122-3-E0B8B5E0B8B3_550.png",
         "left" : 50,
         "hot" : true
     },
@@ -59,7 +59,7 @@
         "name" : "ไม้บรรทัด",
         "price" : 15,
         "type" : "tool",
-        "image" : "./assets/logo.png",
+        "image" : "https://cdn.discordapp.com/attachments/595608417234845715/1081095789171986462/lamfa-stationery-0075_2.png",
         "left" : 50,
         "hot" : true
     },
@@ -68,7 +68,7 @@
         "name" : "วงเวียน",
         "price" : 25,
         "type" : "tool",
-        "image" : "./assets/logo.png",
+        "image" : "https://cdn.discordapp.com/attachments/595608417234845715/1081095265815105556/circlepen.png",
         "left" : 50,
         "hot" : false
     }
