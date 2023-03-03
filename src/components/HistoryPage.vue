@@ -35,17 +35,17 @@
                     <p>Piya</p>
                 </div>
                 <div class="column">
-                    <p>Not Comlplete</p>
+                    <p>{{status}}</p>
                 </div>
                 <div class="column">
                     <p>50 ฿</p>
                 </div>
                 <div class="column">
                     <div class="column">
-                        <div class="button is-rounded m-1">
+                        <div class="button is-rounded m-1" @click="status = 'Not Complete'">
                             ❌
                         </div>
-                        <div class="button is-rounded m-1">
+                        <div class="button is-rounded m-1" @click="status = 'Complete'">
                             ✔️
                         </div>
                     </div>
@@ -60,6 +60,11 @@ export default {
     name: 'HistoryPage',
     props: {
         msg: String
+    },
+    data() {
+        return {
+            status: ''
+        }
     }
 }
 </script>
