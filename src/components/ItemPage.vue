@@ -5,7 +5,7 @@
         </div>
         <div class="columns">
             <figure class="image is-128x128">
-                <img src="https://bulma.io/images/placeholders/128x128.png">
+                <img src="{{ item.image }}">
             </figure>
             <div class="column">
                 {{ item.name }}<br>
