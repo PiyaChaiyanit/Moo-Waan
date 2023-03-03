@@ -19,7 +19,7 @@
                     <a class="button m-1" @click="counter--">-</a>
                     <div class="button m-1">{{ counter }}</div>
                     <a class="button m-1" @click="counter++">+</a>
-                    <a class="button m-1" @click="cart.splice(index, 1)">Delete</a>
+                    <a class="button m-1" @click="delItem(index)">Delete</a>
                 </div>
             </div>
         </div>
@@ -40,6 +40,7 @@
 </template>
 
 <script>
+
 export default {
     name: 'BasketPage',
     props: {
@@ -53,8 +54,9 @@ export default {
         }
     },
     methods:{
-        delItem() {
-            localStorage.removeItem()
+        delItem(item) {
+            this.cart.splice(item,1)
+            localStorage.setItem('cart',JSON.stringify(this.cart))
         },
         clearItem() {
             localStorage.removeItem('cart')
@@ -63,14 +65,11 @@ export default {
     },
     created() {
         this.cart = JSON.parse(localStorage.getItem('cart'))
-        console.log(this.cart)
-        // console.log(this.cart.item.amount)
     },
     watch:{
         cart(){
             localStorage.setItem('cart',JSON.stringify(this.cart))
 
-            console.log('aas')
         }
     }
 }
