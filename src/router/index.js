@@ -17,6 +17,7 @@ import EditUser from '../views/EditUser.vue'
 import HistoryPage from '../views/HistoryView.vue'
 import UserView from '../views/UserView.vue'
 import EditProfile from '../views/EditProfile.vue'
+import AdminHistory from '../views/AdminHistory.vue'
 
 
 const routes = [
@@ -110,6 +111,11 @@ const routes = [
     path: '/editprofile',
     name: 'editprofile',
     component: EditProfile
+  },
+  {
+    path: '/adminhistory',
+    name: 'adminhistory',
+    component: AdminHistory
   }
   
 

@@ -42,10 +42,10 @@
                 </div>
                 <div class="column">
                     <div class="column">
-                        <div class="button is-rounded m-1" @click="status = 'Not Complete'">
+                        <div class="button is-rounded m-1">
                             ❌
                         </div>
-                        <div class="button is-rounded m-1" @click="status = 'Complete'">
+                        <div class="button is-rounded m-1">
                             ✔️
                         </div>
                     </div>
@@ -63,7 +63,7 @@ export default {
     },
     data() {
         return {
-            status: ''
+            status: 'Not Complete'
         }
     }
 }

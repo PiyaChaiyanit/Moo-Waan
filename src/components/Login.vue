@@ -31,30 +31,38 @@ export default {
     }
   },
   methods: {
-      login(){
-        const existingAccount = this.accounts.find(account => {
-          return account.email === this.email;
-        });
-        if(existingAccount){
-          if(existingAccount.password === this.password){
-            this.login_status = true
-            localStorage.setItem('login_status', this.login_status)
-            localStorage.setItem('signedInAccount', JSON.stringify(existingAccount))
-            this.$router.push('/user')
-          } else {
-            alert('password wrong')
-          }
-        } else {
-          alert('email not found')
-        }
+    login() {
+      const existingAccount = this.accounts.find(account => {
+        return account.email === this.email;
+      });
+
+      if (this.email === "admin@moowaan.com" && this.password === "admin1234") {
+        alert('Welcome Admin')
+        this.$router.push('/admin')
       }
-    },
-    created() {
-      const accountData = localStorage.getItem('accounts');
-      if (accountData) {
-        this.accounts = JSON.parse(accountData);
+      else {
+      if(existingAccount) {
+        if (existingAccount.password === this.password) {
+          this.login_status = true
+          localStorage.setItem('login_status', this.login_status)
+          localStorage.setItem('signedInAccount', JSON.stringify(existingAccount))
+          this.$router.push('/user')
+        } else {
+          alert('password wrong')
+        }
+      } else {
+        alert('email not found')
       }
     }
+
+  }
+},
+created() {
+  const accountData = localStorage.getItem('accounts');
+  if (accountData) {
+    this.accounts = JSON.parse(accountData);
+  }
+}
 }
 
 
