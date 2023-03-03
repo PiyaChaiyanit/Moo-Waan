@@ -5,7 +5,7 @@
         </div>
         <div class="columns">
             <figure class="image is-128x128">
-                <img src="{{ item.image }}">
+                <img src="">
             </figure>
             <div class="column">
                 {{ item.name }}<br>
